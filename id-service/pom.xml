@@ -76,7 +76,7 @@
 
     <!-- 编译 -->
     <build>
-        <finalName>dubbodemo-id-spi</finalName>
+        <finalName>dubbodemo-id-service</finalName>
         <!-- 编译需要的文件 -->
         <resources>
             <!-- 编译所有java文件夹下的文件 -->
