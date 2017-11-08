@@ -10,32 +10,28 @@
     <name>id-spi</name>
     <url>http://maven.apache.org</url>
 
-    <properties>
-        <junit.version>3.8.1</junit.version>
-    </properties>
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <!-- 打包发布到服务器 -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>panda Project SNAPSHOTS</name>
+            <url>http://120.24.54.172:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>releases</id>
+            <name>panda Project Releases</name>
+            <url>http://120.24.54.172:8081/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
 
-    <!-- 编译 -->
+    <!-- java编译 -->
     <build>
-        <finalName>dubbodemo-id-spi</finalName>
-        <!-- 编译需要的文件 -->
-        <resources>
-            <!-- 编译所有java文件夹下的文件 -->
-            <resource>
-                <directory>src/main/java</directory>
-            </resource>
-        </resources>
         <plugins>
-            <!-- 用java1.7编译 -->
+            <!-- 指定jdk编译版本 -->
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>

@@ -5,7 +5,6 @@ target/
 dubboRegistryFile/
 base/target/
 id-service/target/
-id-spi/target/
 user-service/target/
 user-spi/target/
 webadmin/target/
