@@ -27,7 +27,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="module" module-name="base" />
-    <orderEntry type="module" module-name="id-spi" />
+    <orderEntry type="library" name="Maven: com.et.dubbodemo:dubbodemo-id-spi:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="module" module-name="user-spi" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.2.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.2.8.RELEASE" level="project" />

@@ -62,8 +62,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base" target="1.7" />
-      <module name="id-service" target="1.7" />
-      <module name="id-spi" target="1.7" />
+      <module name="id-service" target="1.8" />
+      <module name="id-spi" target="1.8" />
       <module name="user-service" target="1.7" />
       <module name="user-spi" target="1.7" />
       <module name="webapi" target="1.5" />

@@ -21,7 +21,9 @@ public class Provider
 
         // 启动dubbo服务
         context = new ClassPathXmlApplicationContext("spring.xml");
+        log.info("111");
         context.start();
+        log.info("222");
         running = true;
         log.info("########### id-service dubbo服务启动成功！###########");
 

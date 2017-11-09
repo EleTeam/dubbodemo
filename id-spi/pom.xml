@@ -4,11 +4,10 @@
 
     <groupId>com.et.dubbodemo</groupId>
     <artifactId>dubbodemo-id-spi</artifactId>
-    <packaging>jar</packaging>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <name>id-spi</name>
-    <url>http://maven.apache.org</url>
 
     <!-- 打包发布到服务器 -->
     <distributionManagement>
@@ -27,14 +26,14 @@
     <!-- java编译 -->
     <build>
         <plugins>
-            <!-- 指定jdk编译版本 -->
+            <!-- 编译 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source> <!-- 源代码使用的开发版本 -->
+                    <target>1.8</target> <!-- 需要生成的目标class文件的编译版本 -->
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
